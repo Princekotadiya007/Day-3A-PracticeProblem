@@ -18,6 +18,7 @@ namespace Day_3A_PracticeProblem
                 Console.WriteLine("Select Option 1");
                 Console.WriteLine("Select Option 2");
                 Console.WriteLine("Select Option 3");
+                Console.WriteLine("Select Option 4");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -41,7 +42,13 @@ namespace Day_3A_PracticeProblem
                         obj.Add(10, 20);
                         obj.Add(10.5f, 20.5f);
                         obj.Add("prince", "kotadiya");
-                        Console.ReadLine();
+                        break;
+                    case 4:
+                        Encapsulation account = new Encapsulation("12345", 1000);
+                        account.Deposit(500);
+                        account.Withdraw(2000);
+                        account.Withdraw(1000);
+                        account.DisplayBalance();
                         break;
                 }
             }
